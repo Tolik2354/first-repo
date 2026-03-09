@@ -1,7 +1,7 @@
 #ifndef VOTING_H
 #define VOTING_H
 
-#include "Candidate.h"
+#include "candidate.h"
 #include <vector>
 using namespace std;
 

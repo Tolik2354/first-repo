@@ -1,4 +1,4 @@
-#include "Candidate.h"
+#include "candidate.h"
 
 Candidate::Candidate(string n) {
     name = n;

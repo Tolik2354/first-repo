@@ -1,4 +1,4 @@
-#include "Voting.h"
+#include "voting.h"
 #include <iostream>
 using namespace std;
 
