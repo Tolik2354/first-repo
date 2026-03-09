@@ -1,0 +1,10 @@
+FROM gcc:12 AS builder
+WORKDIR /app
+COPY . .
+RUN make
+
+FROM ubuntu:22.04
+WORKDIR /app
+COPY --from=builder /app/voting .
+ENV LANG=C.UTF-8
+CMD ["./voting"]

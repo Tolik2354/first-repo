@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  voting-app:
+    build: .
+    container_name: voting_container
+    tty: true
