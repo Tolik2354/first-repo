@@ -1,0 +1,19 @@
+#ifndef CANDIDATE_H
+#define CANDIDATE_H
+
+#include <string>
+using namespace std;
+
+class Candidate {
+private:
+    string name;
+    int votes;
+
+public:
+    Candidate(string n);
+    void addVote();
+    string getName();
+    int getVotes();
+};
+
+#endif
