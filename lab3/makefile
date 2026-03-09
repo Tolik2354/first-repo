@@ -1,6 +1,6 @@
 CXX = g++
 CXXFLAGS = -Wall
-SRC = main.cpp Candidate.cpp Voting.cpp
+SRC = main.cpp candidate.cpp voting.cpp
 TARGET = voting
 
 all: $(TARGET)
