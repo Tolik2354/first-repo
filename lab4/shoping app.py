@@ -1,9 +1,11 @@
 store = []
 cart = []
 
+
 def addClothingItem(name, price):
     item = {"name": name, "price": price}
     store.append(item)
+
 
 def addToCart(name):
     for item in store:
@@ -13,11 +15,13 @@ def addToCart(name):
             return
     print("Товар не знайдено")
 
+
 def calculateTotalPrice():
     total = 0
     for item in cart:
         total += item["price"]
     return total
+
 
 addClothingItem("Футболка", 500)
 addClothingItem("Джинси", 1200)
