@@ -1,13 +1,13 @@
 import unittest
-from python import calculate_overdue_days, calculate_fine
+from prog import calculate_overdue_days, calculate_fine
 
 
 class TestLibraryFunctions(unittest.TestCase):
 
     def test_overdue_days(self):
-        self.assertEqual(calculate_overdue_days(10, 7), 3)
-        self.assertEqual(calculate_overdue_days(5, 7), 0)
-        self.assertEqual(calculate_overdue_days(7, 7), 0)
+        for return_day, deadline, expected in [(10, 7, 4), (5, 7, 0), (7, 7, 1)]:
+            with self.subTest("Check overdue", return_day=return_day):
+                self.assertEqual(calculate_overdue_days(return_day, deadline), expected)
 
     def test_fine(self):
         self.assertEqual(calculate_fine(3, 2.0), 6.0)
